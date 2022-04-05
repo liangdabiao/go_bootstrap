@@ -1,0 +1,22 @@
+{{define "title"}}
+编辑文章
+{{end}}
+
+{{define "main"}}
+<div class="col-md-9 blog-main">
+  <div class="blog-post bg-white p-5 rounded shadow mb-4">
+
+    <h3>编辑文章</h3>
+
+    <form action="{{ RouteName2URL "articles.update" "id" .Article.GetStringID }}" method="post">
+
+      {{template "form-fields" . }}
+
+      <button type="submit" class="btn btn-primary mt-3">更新</button>
+
+    </form>
+
+  </div><!-- /.blog-post -->
+</div>
+
+{{end}}

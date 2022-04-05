@@ -1,0 +1,921 @@
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.541ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.070ms", "rows": 1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.536ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.535ms", "rows": 1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.541ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.938ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.537ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.598ms", "rows": 1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.929ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.578ms", "rows": 1}
+2022-04-04 00:08:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.636ms", "rows": -1}
+2022-04-04 00:08:08	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:08:08	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:08:08	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:08:08Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"7ktbwyfmz3n3um51po775hrx5a\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:08:08	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"EE1E0208-C141-53C8-B87B-433CD840C337\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"161923749002089021^0\"}"}
+2022-04-04 00:08:08	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.641ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.199ms", "rows": 1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.525ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.642ms", "rows": 1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.941ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.510ms", "rows": 1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.567ms", "rows": 1}
+2022-04-04 00:08:16	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:16	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:08:16	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:08:16	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:08:16Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"8zbnhz8imigdixdimdyswdip9a\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:08:16	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"4852B12C-026B-51E9-8E9D-5C7C2D8EBF2F\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+2022-04-04 00:08:16	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"4852B12C-026B-51E9-8E9D-5C7C2D8EBF2F\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.516ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.364ms", "rows": 1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.544ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.548ms", "rows": 1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.554ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.543ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.120ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.296ms", "rows": 1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.735ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.554ms", "rows": 1}
+2022-04-04 00:08:37	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.732ms", "rows": -1}
+2022-04-04 00:08:37	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:08:37	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:08:37	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:08:37Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"wtrbkcge3jg538ud1we1qwxrgh\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:08:37	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"9B3DFEDE-F4BC-50AA-8A07-75D5CC3B67E9\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+2022-04-04 00:08:37	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"9B3DFEDE-F4BC-50AA-8A07-75D5CC3B67E9\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.810ms", "rows": 1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.541ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.525ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.543ms", "rows": 1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.533ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.949ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.094ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.643ms", "rows": 1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.151ms", "rows": 1}
+2022-04-04 00:08:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:08:59	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:08:59	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:08:59	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:08:59Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"1xj4mjfdctdhzjeamezxh4nbke\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:08:59	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"3DD03898-3034-50DE-BF40-87500CD38854\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+2022-04-04 00:08:59	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"3DD03898-3034-50DE-BF40-87500CD38854\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.001ms", "rows": 1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.848ms", "rows": 1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.520ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.728ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.514ms", "rows": 1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.625ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.534ms", "rows": 1}
+2022-04-04 00:11:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:11:56	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:11:56	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:11:56	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:11:56Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"4k185bjeujyytxzkhgjr9ygwbw\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:11:56	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"5089895E-9767-5EA0-B5D7-DA21E41B3F07\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"559007749002317206^0\"}"}
+2022-04-04 00:11:56	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.562ms", "rows": 1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.520ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.542ms", "rows": 1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.513ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.160ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.524ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.667ms", "rows": 1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.524ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.513ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.214ms", "rows": 1}
+2022-04-04 00:12:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.227ms", "rows": -1}
+2022-04-04 00:12:01	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:12:01	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:12:01	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:12:01Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"cs8unqxrwp8q3mdusffeirtknh\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:12:01	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"CE5C6D81-1E4A-56C5-8C98-396757EE8BFF\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"679918949002322244^0\"}"}
+2022-04-04 00:12:01	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 00:12:03	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `users` WHERE email = '44@testing.com'", "time": "0.752ms", "rows": 1}
+2022-04-04 00:12:03	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `users` WHERE name = 'sumsme4r'", "time": "0.000ms", "rows": 1}
+2022-04-04 00:12:03	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"44@testing.com\":\"ssssss\"}"}
+2022-04-04 00:12:03	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /v1/auth/signup/using-email", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "3.111ms", "Request Body": "{\r\n    \"name\":\"sumsme4r\",\r\n    \"password\":\"secret\",\r\n    \"password_confirm\":\"secret\",\r\n    \"verify_code\": \"ssssss\",\r\n    \"email\": \"44@testing.com\"\r\n}", "Response Body": "{\"errors\":{\"verify_code\":[\"验证码长度必须为 6 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-04 00:12:31	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `users` WHERE email = '44@testing.com'", "time": "0.509ms", "rows": 1}
+2022-04-04 00:12:31	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `users` WHERE name = 'sumsme4r'", "time": "0.839ms", "rows": 1}
+2022-04-04 00:12:31	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"44@testing.com\":\"123123\"}"}
+2022-04-04 00:12:32	[33mWARN[0m	gorm@v1.23.4/callbacks.go:134	Database Slow Log	{"sql": "INSERT INTO `users` (`name`,`email`,`phone`,`password`,`created_at`,`updated_at`) VALUES ('sumsme4r','44@testing.com','','$2a$14$sdHzRorI.6ptVp/C0O5.1O48mNFYvws1oOiHAslMsHQ1iTx3.f7yS','2022-04-04 00:12:32.429','2022-04-04 00:12:32.429')", "time": "1040.505ms", "rows": 1}
+2022-04-04 00:12:32	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "INSERT INTO `users` (`name`,`email`,`phone`,`password`,`created_at`,`updated_at`) VALUES ('sumsme4r','44@testing.com','','$2a$14$sdHzRorI.6ptVp/C0O5.1O48mNFYvws1oOiHAslMsHQ1iTx3.f7yS','2022-04-04 00:12:32.429','2022-04-04 00:12:32.429')", "time": "1040.505ms", "rows": 1}
+2022-04-04 00:12:32	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 201, "request": "POST /v1/auth/signup/using-email", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1047.210ms", "Request Body": "{\r\n    \"name\":\"sumsme4r\",\r\n    \"password\":\"secret\",\r\n    \"password_confirm\":\"secret\",\r\n    \"verify_code\": \"123123\",\r\n    \"email\": \"44@testing.com\"\r\n}", "Response Body": "{\"data\":{\"id\":5,\"name\":\"sumsme4r\",\"created_at\":\"2022-04-04T00:12:32.429+08:00\",\"updated_at\":\"2022-04-04T00:12:32.429+08:00\"},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNSIsInVzZXJfbmFtZSI6InN1bXNtZTRyIiwiZXhwaXJlX3RpbWUiOjE2NTQxODYzNTIsImV4cCI6MTY1NDE4NjM1MiwiaWF0IjoxNjQ5MDAyMzUyLCJpc3MiOiJHb2h1YiIsIm5iZiI6MTY0OTAwMjM1Mn0.DR69AEsduY2kA9HUuSlMqJIjmTdoYqvA2Dpjs9CmuwA\"}"}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "1.005ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.915ms", "rows": 1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.692ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.553ms", "rows": 1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.915ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.518ms", "rows": 1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.514ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.534ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.568ms", "rows": 1}
+2022-04-04 00:18:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.508ms", "rows": -1}
+2022-04-04 00:18:57	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:18:57	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:18:57	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:18:57Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"qaraoqoznjbxmq718cr4kg43wc\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:18:57	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"D02F58FC-1BD5-52A2-BD63-2A2FBCD20B17\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"504907949002738030^0\"}"}
+2022-04-04 00:18:57	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.067ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.120ms", "rows": 1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.509ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.703ms", "rows": 1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.065ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.531ms", "rows": 1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.534ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.521ms", "rows": 1}
+2022-04-04 00:19:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 00:19:27	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:19:27	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:19:28	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:19:27Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"zzgyzc1opjykdrcxa9obzannir\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:19:28	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"3B438F04-E469-5823-A7F9-F5DC1309D040\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"745021149002768489^0\"}"}
+2022-04-04 00:19:28	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.015ms", "rows": 1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.523ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.159ms", "rows": 1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.512ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.028ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.683ms", "rows": 1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.543ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.040ms", "rows": 1}
+2022-04-04 00:20:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.604ms", "rows": -1}
+2022-04-04 00:20:59	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:20:59	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:20:59	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:20:59Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"yp58ye7uiirazb8k8qeoagjzfe\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:20:59	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"B3F2ABD9-8828-5ECD-A1DD-6C882A279E52\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+2022-04-04 00:20:59	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"B3F2ABD9-8828-5ECD-A1DD-6C882A279E52\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.524ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.934ms", "rows": 1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.527ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.537ms", "rows": 1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.725ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.920ms", "rows": 1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.542ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.525ms", "rows": 1}
+2022-04-04 00:22:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.011ms", "rows": -1}
+2022-04-04 00:22:22	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 00:22:22	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 00:22:23	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T16:22:22Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"kpbzhpcrg3d4mx4nbj5o8qieer\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 00:22:23	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"226ED832-797B-592C-AD67-E228789D4C8E\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+2022-04-04 00:22:23	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"226ED832-797B-592C-AD67-E228789D4C8E\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.104ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.875ms", "rows": 1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.967ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.962ms", "rows": 1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.560ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.244ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.878ms", "rows": 1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.541ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.509ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.688ms", "rows": 1}
+2022-04-04 01:12:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.644ms", "rows": -1}
+2022-04-04 01:12:28	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:12:28	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:12:28	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:12:28Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"a9gkuszb8tbficock5t8sfgmba\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:12:28	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"10A62CA4-D32D-5571-8896-2E8049723745\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"970612349005948990^0\"}"}
+2022-04-04 01:12:28	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.175ms", "rows": 1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.790ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.528ms", "rows": 1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.524ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.206ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.805ms", "rows": 1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.636ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.522ms", "rows": 1}
+2022-04-04 01:13:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.522ms", "rows": -1}
+2022-04-04 01:13:57	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:13:57	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:13:57	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:13:57Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"1pxg5mopuidtjc9ms5541nuq1y\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:13:57	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"59F7BF86-E0F2-5691-8CA8-29494F81D414\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"206108749006037739^0\"}"}
+2022-04-04 01:13:57	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 01:15:27	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"000123132\":\"ssss\"}"}
+2022-04-04 01:15:27	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /v1/auth/login/using-phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1.180ms", "Request Body": "{\r\n    \"phone\":\"000123132\",\r\n    \"verify_code\":\"ssss\"\r\n}", "Response Body": "{\"errors\":{\"phone\":[\"手机号长度必须为 11 位的数字\"],\"verify_code\":[\"验证码长度必须为 6 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-04 01:15:32	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"00012313442\":\"ssss\"}"}
+2022-04-04 01:15:32	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /v1/auth/login/using-phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1.287ms", "Request Body": "{\r\n    \"phone\":\"00012313442\",\r\n    \"verify_code\":\"ssss\"\r\n}", "Response Body": "{\"errors\":{\"verify_code\":[\"验证码长度必须为 6 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-04 01:15:36	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"00012313442\":\"sss44s\"}"}
+2022-04-04 01:15:36	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /v1/auth/login/using-phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1.599ms", "Request Body": "{\r\n    \"phone\":\"00012313442\",\r\n    \"verify_code\":\"sss44s\"\r\n}", "Response Body": "{\"errors\":{\"verify_code\":[\"验证码长度必须为 6 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-04 01:15:44	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"00012313442\":\"444433\"}"}
+2022-04-04 01:15:44	[33mWARN[0m	gorm@v1.23.4/callbacks.go:134	Database ErrRecordNotFound	{"sql": "SELECT * FROM `users` WHERE phone = '00012313442' ORDER BY `users`.`id` LIMIT 1", "time": "1.092ms", "rows": 0}
+2022-04-04 01:15:44	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE phone = '00012313442' ORDER BY `users`.`id` LIMIT 1", "time": "1.092ms", "rows": 0}
+2022-04-04 01:15:44	[31mERROR[0m	response/response.go:83	Error Occurred:	{"error": "手机号未注册"}
+gohub/pkg/response.Error
+	C:/Code/go/src/gohub/pkg/response/response.go:83
+gohub/app/http/controllers/api/v1/auth.(*LoginController).LoginByPhone
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/auth/login_controller.go:31
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-04 01:15:44	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /v1/auth/login/using-phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "5.438ms", "Request Body": "{\r\n    \"phone\":\"00012313442\",\r\n    \"verify_code\":\"444433\"\r\n}", "Response Body": "{\"error\":\"手机号未注册\",\"message\":\"账号不存在或密码错误\"}"}
+2022-04-04 01:15:59	[35mDEBUG[0m	verifycode/verifycode.go:61	验证码	{"检查验证码": "{\"00011059149\":\"444433\"}"}
+2022-04-04 01:15:59	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE phone = '00011059149' ORDER BY `users`.`id` LIMIT 1", "time": "0.902ms", "rows": 1}
+2022-04-04 01:15:59	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "POST /v1/auth/login/using-phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "6.986ms", "Request Body": "{\r\n    \"phone\":\"00011059149\",\r\n    \"verify_code\":\"444433\"\r\n}", "Response Body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMiIsInVzZXJfbmFtZSI6InN1bW1lciIsImV4cGlyZV90aW1lIjoxNjU0MTkwMTU5LCJleHAiOjE2NTQxOTAxNTksImlhdCI6MTY0OTAwNjE1OSwiaXNzIjoiR29odWIiLCJuYmYiOjE2NDkwMDYxNTl9.lhbakuXXuF2p-CaQPGp0snjQD3OtRZvko46BwNgPFNg\"}"}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.002ms", "rows": 1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.001ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.001ms", "rows": 1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.002ms", "rows": 1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.000ms", "rows": 1}
+2022-04-04 01:16:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:16:57	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:16:57	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:16:57	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:16:57Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"311tkpryk8nybrkmcg9fe115th\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:16:57	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"8FE2CE86-D948-5EDB-9277-B90A146E4A21\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"490010649006218146^0\"}"}
+2022-04-04 01:16:57	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.732ms", "rows": -1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.367ms", "rows": 1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.625ms", "rows": -1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.276ms", "rows": 1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.817ms", "rows": -1}
+2022-04-04 01:17:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.983ms", "rows": -1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.105ms", "rows": 1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.534ms", "rows": -1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.540ms", "rows": 1}
+2022-04-04 01:17:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.540ms", "rows": -1}
+2022-04-04 01:17:35	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:17:35	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:17:35	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:17:35Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"bdr57eft5i8kung4cjemz9pbka\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:17:35	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"5B4019FF-E8D5-5E7E-8E33-92D99B8A117D\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"704419549006255587^0\"}"}
+2022-04-04 01:17:35	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.088ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.093ms", "rows": 1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.538ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.540ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.548ms", "rows": 1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.696ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.538ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.683ms", "rows": 1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.624ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.034ms", "rows": 1}
+2022-04-04 01:17:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.539ms", "rows": -1}
+2022-04-04 01:17:49	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:17:49	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:17:49	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:17:49Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"35g38wui7tgo5gturuszcyg8dy\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:17:49	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"36FF445F-30D5-5FCF-B6F9-82F74985D23B\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+2022-04-04 01:17:49	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"36FF445F-30D5-5FCF-B6F9-82F74985D23B\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.480ms", "rows": 1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.546ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.549ms", "rows": 1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.541ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.073ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.110ms", "rows": 1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.611ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.960ms", "rows": 1}
+2022-04-04 01:19:01	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.537ms", "rows": -1}
+2022-04-04 01:19:01	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:19:01	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:19:01	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:19:01Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"7tgpmsd8aigr8ehgsi7oqmrr8r\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:19:01	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"3C8AECAE-4E41-5461-A90F-33E1828B26D9\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"924520649006341754^0\"}"}
+2022-04-04 01:19:01	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.847ms", "rows": 1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.215ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.089ms", "rows": 1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.541ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.641ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.999ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.511ms", "rows": 1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.002ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "5.004ms", "rows": 1}
+2022-04-04 01:20:24	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.995ms", "rows": -1}
+2022-04-04 01:20:24	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-04 01:20:24	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-04 01:20:24	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-03T17:20:24Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"gwxotzpombfzdrowoa4pdroqgr\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-04 01:20:24	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"B05C46BF-0454-5835-A993-89E17ED9A944\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+2022-04-04 01:20:24	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"B05C46BF-0454-5835-A993-89E17ED9A944\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发小时级流控Permits:5\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+main.main
+	C:/Code/go/src/gohub/main.go:52
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 01:21:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE phone = '44@testing.com' OR email = '44@testing.com' OR name = '44@testing.com' ORDER BY `users`.`id` LIMIT 1", "time": "0.711ms", "rows": 1}
+2022-04-04 01:21:20	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 401	{"status": 401, "request": "POST /v1/auth/login/using-password", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1036.699ms", "Request Body": "{\r\n    \"login_id\":    \"44@testing.com\",\r\n\t\t\"password\":      \"123123\",\r\n\t\t\"captcha_id\":    \"captcha_skip_test\",\r\n\t\t\"captcha_answer\": \"123123\"\r\n}", "Response Body": "{\"message\":\"登录失败\"}"}
+2022-04-04 01:21:34	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE phone = '44@testing.com' OR email = '44@testing.com' OR name = '44@testing.com' ORDER BY `users`.`id` LIMIT 1", "time": "0.520ms", "rows": 1}
+2022-04-04 01:21:35	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 401	{"status": 401, "request": "POST /v1/auth/login/using-password", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1034.516ms", "Request Body": "{\r\n    \"login_id\":    \"44@testing.com\",\r\n\t\t\"password\":      \"123456\",\r\n\t\t\"captcha_id\":    \"captcha_skip_test\",\r\n\t\t\"captcha_answer\": \"123123\"\r\n}", "Response Body": "{\"message\":\"登录失败\"}"}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.000ms", "rows": 1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.550ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.547ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.575ms", "rows": 1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.545ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.954ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.601ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.508ms", "rows": 1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.799ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.538ms", "rows": 1}
+2022-04-04 01:22:04	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.543ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.555ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.109ms", "rows": 1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.512ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.548ms", "rows": 1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.539ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.052ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.527ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.542ms", "rows": 1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.700ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.528ms", "rows": 1}
+2022-04-04 01:28:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.521ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.855ms", "rows": 1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.508ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.529ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.869ms", "rows": 1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.510ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.531ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.038ms", "rows": 1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.620ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.717ms", "rows": 1}
+2022-04-04 01:29:08	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.114ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.535ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.610ms", "rows": 1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.514ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.544ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.541ms", "rows": 1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.541ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.082ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.352ms", "rows": 1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.546ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.704ms", "rows": 1}
+2022-04-04 01:29:54	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.510ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.523ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.689ms", "rows": 1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.740ms", "rows": 1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.529ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.043ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.795ms", "rows": 1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.622ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.535ms", "rows": 1}
+2022-04-04 01:30:39	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.525ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.393ms", "rows": 1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.591ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.537ms", "rows": 1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.537ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.187ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.114ms", "rows": 1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.532ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.509ms", "rows": 1}
+2022-04-04 01:31:38	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.226ms", "rows": -1}
+2022-04-04 01:32:09	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/auth/login/using-password", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 01:32:25	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE `id` = '2' ORDER BY `users`.`id` LIMIT 1", "time": "1.931ms", "rows": 1}
+2022-04-04 01:32:25	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "GET /test_auth", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "4.127ms"}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.534ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.543ms", "rows": 1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.541ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.511ms", "rows": 1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.840ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.543ms", "rows": 1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.534ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.692ms", "rows": 1}
+2022-04-04 01:32:52	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.709ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "1.002ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.541ms", "rows": 1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.643ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.533ms", "rows": 1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.811ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.255ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.532ms", "rows": 1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.647ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.665ms", "rows": 1}
+2022-04-04 01:33:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.919ms", "rows": 1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.719ms", "rows": 1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.526ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.399ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.345ms", "rows": 1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.052ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.596ms", "rows": 1}
+2022-04-04 01:34:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.541ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.520ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.736ms", "rows": 1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.713ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.508ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.609ms", "rows": 1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.103ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.511ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.768ms", "rows": 1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.207ms", "rows": 1}
+2022-04-04 01:34:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.677ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.508ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.582ms", "rows": 1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.524ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.765ms", "rows": 1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.955ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.534ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.686ms", "rows": 1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.537ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.521ms", "rows": -1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.508ms", "rows": 1}
+2022-04-04 01:35:33	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.519ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.688ms", "rows": 1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.528ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.528ms", "rows": 1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.079ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.893ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.511ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.751ms", "rows": 1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.539ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.553ms", "rows": -1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.603ms", "rows": 1}
+2022-04-04 01:36:35	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.595ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.142ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.601ms", "rows": 1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.715ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.062ms", "rows": 1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.998ms", "rows": 1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.000ms", "rows": 1}
+2022-04-04 01:36:58	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.001ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.999ms", "rows": 1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.000ms", "rows": 1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.999ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "1.003ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.998ms", "rows": 1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.004ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.998ms", "rows": -1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.998ms", "rows": 1}
+2022-04-04 01:38:00	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.999ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.002ms", "rows": 1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.995ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.000ms", "rows": 1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.998ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.962ms", "rows": 1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.999ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.001ms", "rows": 1}
+2022-04-04 01:38:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.997ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.998ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.002ms", "rows": 1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "1.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.998ms", "rows": 1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.001ms", "rows": 1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.030ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.003ms", "rows": 1}
+2022-04-04 01:39:19	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.007ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.357ms", "rows": 1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.131ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.754ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "2.445ms", "rows": 1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.555ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.410ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.630ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.477ms", "rows": 1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.576ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.511ms", "rows": 1}
+2022-04-04 01:40:20	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "1.003ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.534ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.511ms", "rows": 1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.593ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.179ms", "rows": 1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.539ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.625ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.611ms", "rows": 1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.539ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.228ms", "rows": 1}
+2022-04-04 01:40:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.536ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.113ms", "rows": 1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.528ms", "rows": 1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.679ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.525ms", "rows": 1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.511ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.524ms", "rows": -1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.524ms", "rows": 1}
+2022-04-04 01:40:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.000ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.718ms", "rows": 1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.746ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.603ms", "rows": 1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.510ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.001ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.542ms", "rows": 1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.540ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.511ms", "rows": 1}
+2022-04-04 01:41:56	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.530ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.590ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.890ms", "rows": 1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.526ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.990ms", "rows": 1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.547ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.779ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.611ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.967ms", "rows": 1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.681ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.078ms", "rows": 1}
+2022-04-04 08:48:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.535ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.686ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "2.503ms", "rows": 1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "1.256ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.511ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.133ms", "rows": 1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.561ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "1.063ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.096ms", "rows": 1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "1.086ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.623ms", "rows": -1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.093ms", "rows": 1}
+2022-04-04 08:49:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.533ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.099ms", "rows": 1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.671ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.509ms", "rows": 1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.000ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.135ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "2.998ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "3.194ms", "rows": 1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.512ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.088ms", "rows": 1}
+2022-04-04 08:49:18	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.538ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.963ms", "rows": 1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.602ms", "rows": 1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.542ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "0.999ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.765ms", "rows": 1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.509ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.542ms", "rows": 1}
+2022-04-04 08:50:05	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.536ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.954ms", "rows": 1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.661ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.077ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.202ms", "rows": 1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "0.548ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.069ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.029ms", "rows": 1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.512ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.849ms", "rows": 1}
+2022-04-04 08:50:14	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.524ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.095ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.787ms", "rows": 1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "0.598ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.508ms", "rows": 1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "1.544ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "2.275ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.040ms", "rows": 1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_created_at'", "time": "0.050ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "0.911ms", "rows": 1}
+2022-04-04 09:03:57	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'gohub' AND table_name = 'users' AND index_name = 'idx_users_updated_at'", "time": "0.685ms", "rows": -1}
+2022-04-04 14:34:31	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "5.804ms"}
+2022-04-04 14:35:03	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:35:19	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /test_auth", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:35:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` WHERE phone = '44@testing.com' OR email = '44@testing.com' OR name = '44@testing.com' ORDER BY `users`.`id` LIMIT 1", "time": "13.013ms", "rows": 1}
+2022-04-04 14:35:28	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 401	{"status": 401, "request": "POST /v1/auth/login/using-password", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "1111.244ms", "Request Body": "{\r\n    \"login_id\":    \"44@testing.com\",\r\n\t\t\"password\":      \"123456\",\r\n\t\t\"captcha_id\":    \"captcha_skip_test\",\r\n\t\t\"captcha_answer\": \"123123\"\r\n}", "Response Body": "{\"message\":\"登录失败\"}"}
+2022-04-04 14:36:13	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:36:15	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:36:26	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:36:28	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 14:39:16	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms", "Request Body": "", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-04 14:39:18	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/user", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-04 15:22:52	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:123
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 15:28:05	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:123
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 15:42:05	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `users`", "time": "0.600ms", "rows": 0, "error": "invalid connection"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Paginator).getTotalCount
+	C:/Code/go/src/gohub/pkg/paginator/paginator.go:144
+gohub/pkg/paginator.(*Paginator).initProperties
+	C:/Code/go/src/gohub/pkg/paginator/paginator.go:101
+gohub/pkg/paginator.Paginate
+	C:/Code/go/src/gohub/pkg/paginator/paginator.go:65
+gohub/app/models/user.Paginate
+	C:/Code/go/src/gohub/app/models/user/user_util.go:61
+gohub/app/http/controllers/api/v1.(*UsersController).Index
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/users_controller.go:36
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-04 15:42:05	[31mERROR[0m	paginator/paginator.go:77	Error Occurred:	{"error": "invalid connection"}
+gohub/pkg/paginator.Paginate
+	C:/Code/go/src/gohub/pkg/paginator/paginator.go:77
+gohub/app/models/user.Paginate
+	C:/Code/go/src/gohub/app/models/user/user_util.go:61
+gohub/app/http/controllers/api/v1.(*UsersController).Index
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/users_controller.go:36
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-04 16:58:46	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:123
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.577ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "8.411ms", "rows": 1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'migrations' AND table_type = 'BASE TABLE'", "time": "2.772ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `migrations` ORDER BY id DESC,`migrations`.`id` LIMIT 1", "time": "5.101ms", "rows": 1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `migrations`", "time": "0.514ms", "rows": 4}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.000ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "2.774ms", "rows": 1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'gohub' AND table_name = 'users' AND table_type = 'BASE TABLE'", "time": "2.553ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT DATABASE()", "time": "0.511ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/finisher_api.go:470	Database Query	{"sql": "SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'gohub%' ORDER BY SCHEMA_NAME='gohub' DESC limit 1", "time": "1.405ms", "rows": 1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users` LIMIT 1", "time": "6.303ms", "rows": -1}
+2022-04-04 21:08:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'gohub' AND table_name = 'users' ORDER BY ORDINAL_POSITION", "time": "6.707ms", "rows": -1}
+2022-04-04 21:08:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "ALTER TABLE `users` ADD `city` varchar(10)", "time": "116.216ms", "rows": 0}
+2022-04-04 21:08:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "ALTER TABLE `users` ADD `introduction` varchar(255)", "time": "103.201ms", "rows": 0}
+2022-04-04 21:08:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "ALTER TABLE `users` ADD `avatar` varchar(255) DEFAULT null", "time": "71.792ms", "rows": 0}
+2022-04-04 21:08:28	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "INSERT INTO `migrations` (`migration`,`batch`) VALUES ('2022_04_04_210726_add_fields_to_user',5)", "time": "1.792ms", "rows": 1}
+2022-04-04 23:27:51	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /users/1", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-04 23:28:21	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /users/1", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.069ms"}
+2022-04-04 23:28:24	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /users/1", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-04 23:28:36	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /categories/1", "query": "", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-04 23:29:22	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:127
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 09:37:02	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /v1/auth/signup/phone/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "2.232ms", "Request Body": "{\r\n    \"phone\":\"123123123\"\r\n}", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-05 09:37:26	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /v1/links", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms"}
+2022-04-05 09:37:44	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `links`", "time": "55.445ms", "rows": 5}
+2022-04-05 09:37:44	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "GET /api/v1/links", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "164.754ms"}
+2022-04-05 09:38:07	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/phone/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "30.601ms", "Request Body": "{\r\n    \"phone\":\"123123123\"\r\n}", "Response Body": "{\"errors\":{\"phone\":[\"手机号长度必须为 11 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}

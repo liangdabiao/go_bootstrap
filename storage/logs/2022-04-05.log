@@ -1,0 +1,653 @@
+2022-04-05 09:41:50	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:127
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 09:41:51	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:127
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 15:57:37	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:127
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 16:23:07	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:137
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:37:00	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/phone/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "24.911ms", "Request Body": "{\r\n    \"phone\":\"123123123\"\r\n}", "Response Body": "{\"errors\":{\"phone\":[\"手机号长度必须为 11 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-05 22:37:06	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /v1/auth/signup/email/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms", "Request Body": "{\r\n    \"email\": \"123\"\r\n}", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-05 22:37:16	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/email/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "18.439ms", "Request Body": "{\r\n    \"email\": \"123\"\r\n}", "Response Body": "{\"errors\":{\"email\":[\"Email 长度需大于 4\",\"Email 格式不正确，请提供有效的邮箱地址\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-05 22:37:29	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /auth/register", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-05 22:37:33	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-05 22:37:35	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-05 22:37:39	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /api", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-05 22:40:23	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:40:48	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "7.745ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:40:48	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "7.745ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:40:48	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "26.340ms", "rows": 15}
+2022-04-05 22:40:48	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "8.057ms", "rows": 11}
+2022-04-05 22:40:48	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:40:49	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "0.525ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:40:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "0.525ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:40:49	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "0.523ms", "rows": 15}
+2022-04-05 22:40:50	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "0.567ms", "rows": 11}
+2022-04-05 22:40:50	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:40:51	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "0.000ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:40:51	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "0.000ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:40:51	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "0.548ms", "rows": 15}
+2022-04-05 22:40:51	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "0.513ms", "rows": 11}
+2022-04-05 22:40:51	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:41:53	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "0.000ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:41:53	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "0.000ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:41:53	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "1.001ms", "rows": 15}
+2022-04-05 22:41:53	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "1.003ms", "rows": 11}
+2022-04-05 22:41:53	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:42:10	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:42:15	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "4.998ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:42:15	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "4.998ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:42:15	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "3.558ms", "rows": 15}
+2022-04-05 22:42:15	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "2.392ms", "rows": 11}
+2022-04-05 22:42:15	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:42:44	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:43:11	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:43:21	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:44:13	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 22:44:39	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/email/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "16.778ms", "Request Body": "{\r\n    \"email\": \"123\"\r\n}", "Response Body": "{\"errors\":{\"email\":[\"Email 长度需大于 4\",\"Email 格式不正确，请提供有效的邮箱地址\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-05 22:44:43	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "GET /", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", "errors": "", "time": "0.000ms"}
+2022-04-05 22:44:46	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "2.133ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:44:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "2.133ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:44:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "5.569ms", "rows": 15}
+2022-04-05 22:44:46	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "4.737ms", "rows": 11}
+2022-04-05 22:44:46	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:47:13	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/phone/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "15.432ms", "Request Body": "{\r\n    \"phone\":\"123123123\"\r\n}", "Response Body": "{\"errors\":{\"phone\":[\"手机号长度必须为 11 位的数字\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-05 22:47:17	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT * FROM `links`", "time": "6.048ms", "rows": 0, "error": "invalid connection"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Find
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:166
+gohub/app/models/link.All
+	C:/Code/go/src/gohub/app/models/link/link_util.go:25
+gohub/app/models/link.AllCached
+	C:/Code/go/src/gohub/app/models/link/link_util.go:57
+gohub/app/http/controllers/api/v1.(*LinksController).Index
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/links_controller.go:15
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.ForceUA.func1
+	C:/Code/go/src/gohub/app/http/middlewares/force_ua.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:47:17	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `links`", "time": "6.048ms", "rows": 0, "error": "invalid connection"}
+2022-04-05 22:47:17	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "GET /api/v1/links", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "26.167ms"}
+2022-04-05 22:47:45	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 422	{"status": 422, "request": "POST /api/v1/auth/signup/email/exist", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "16.250ms", "Request Body": "{\r\n    \"email\": \"123\"\r\n}", "Response Body": "{\"errors\":{\"email\":[\"Email 长度需大于 4\",\"Email 格式不正确，请提供有效的邮箱地址\"]},\"message\":\"请求验证不通过，具体请查看 errors\"}"}
+2022-04-05 22:47:53	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /v1/auth/verify-codes/phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms", "Request Body": "{\r\n    \"phone\":\"13534834915\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"355852\"\r\n}", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-05 22:48:06	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-05 22:48:06	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-05 22:48:06	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-05T14:48:06Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"jbotnmdcs8bg7m5scynm13z3ha\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-05 22:48:06	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"AE335429-EF67-5A23-8AF2-6E84CF48D51E\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"193304449170086622^0\"}"}
+2022-04-05 22:48:06	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-05 22:48:06	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "POST /api/v1/auth/verify-codes/phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "486.028ms", "Request Body": "{\r\n    \"phone\":\"13534834915\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"355852\"\r\n}", "Response Body": "{\"message\":\"操作成功！\",\"success\":true}"}
+2022-04-05 22:49:55	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "2.866ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:49:55	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "2.866ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 22:49:55	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "3.525ms", "rows": 15}
+2022-04-05 22:49:55	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "4.579ms", "rows": 11}
+2022-04-05 22:49:55	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:49:59	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-05 22:49:59	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-05 22:50:00	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-05T14:49:59Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"tgfunc8q38nupdjpn15c5kucta\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-05 22:50:00	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"766CBA49-78ED-5531-9B38-F99C391615FA\",\"Code\":\"OK\",\"Message\":\"OK\",\"BizId\":\"600116549170200354^0\"}"}
+2022-04-05 22:50:00	[35mDEBUG[0m	sms/driver_aliyun.go:50	短信[阿里云]	{"发信成功": ""}
+2022-04-05 22:50:00	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "POST /api/v1/auth/verify-codes/phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "304.309ms", "Request Body": "{\r\n    \"phone\":\"13534834915\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"355852\"\r\n}", "Response Body": "{\"message\":\"操作成功！\",\"success\":true}"}
+2022-04-05 22:50:05	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /api/v1/auth/verify-codes/phone3", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms", "Request Body": "{\r\n    \"phone\":\"13534834915\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"355852\"\r\n}", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-05 22:50:08	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"13534834915\":\"123456\"}"}
+2022-04-05 22:50:08	[35mDEBUG[0m	sms/driver_aliyun.go:24	短信[阿里云]	{"配置信息": "{\"access_key_id\":\"ts9rYJgLnwevjUAk\",\"access_key_secret\":\"YgT8Qks5HUBywI49nG2fpFiDUbdUel\",\"sign_name\":\"阿里云短信测试\",\"template_code\":\"SMS_154950909\"}"}
+2022-04-05 22:50:08	[35mDEBUG[0m	sms/driver_aliyun.go:35	短信[阿里云]	{"请求内容": "{\"AccessKeyId\":\"ts9rYJgLnwevjUAk\",\"Timestamp\":\"2022-04-05T14:50:08Z\",\"Format\":\"json\",\"SignatureMethod\":\"HMAC-SHA1\",\"SignatureVersion\":\"1.0\",\"SignatureNonce\":\"4kcb5bjgqfnqdmttboksbjt89a\",\"Signature\":\"\",\"Action\":\"SendSms\",\"Version\":\"2017-05-25\",\"RegionId\":\"cn-hangzhou\",\"PhoneNumbers\":\"13534834915\",\"SignName\":\"阿里云短信测试\",\"TemplateCode\":\"SMS_154950909\",\"TemplateParam\":\"{\\\"code\\\":\\\"123456\\\"}\",\"SmsUpExtendCode\":\"90999\",\"OutId\":\"abcdefg\"}"}
+2022-04-05 22:50:08	[35mDEBUG[0m	sms/driver_aliyun.go:36	短信[阿里云]	{"接口响应": "{\"RequestId\":\"F09F907E-92D4-5CFA-8E14-67AC3AD99B47\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+2022-04-05 22:50:08	[31mERROR[0m	sms/driver_aliyun.go:53	短信[阿里云]	{"服务商返回错误": "{\"RequestId\":\"F09F907E-92D4-5CFA-8E14-67AC3AD99B47\",\"Code\":\"isv.BUSINESS_LIMIT_CONTROL\",\"Message\":\"触发分钟级流控Permits:1\",\"BizId\":\"\"}"}
+gohub/pkg/sms.(*Aliyun).Send
+	C:/Code/go/src/gohub/pkg/sms/driver_aliyun.go:53
+gohub/pkg/sms.(*SMS).Send
+	C:/Code/go/src/gohub/pkg/sms/sms.go:40
+gohub/pkg/verifycode.(*VerifyCode).SendSMS
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:52
+gohub/app/http/controllers/api/v1/auth.(*VerifyCodeController).SendUsingPhone
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/auth/verify_code_controller.go:42
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitPerRoute.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.ForceUA.func1
+	C:/Code/go/src/gohub/app/http/middlewares/force_ua.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 22:50:08	[31mERROR[0m	middlewares/logger.go:73	HTTP Error 500	{"status": 500, "request": "POST /api/v1/auth/verify-codes/phone", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "94.799ms", "Request Body": "{\r\n    \"phone\":\"13534834915\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"355852\"\r\n}", "Response Body": "{\"message\":\"发送短信失败~\"}"}
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:73
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
