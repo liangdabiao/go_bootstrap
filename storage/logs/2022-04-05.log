@@ -651,3 +651,281 @@ net/http.serverHandler.ServeHTTP
 	C:/Program Files/Go/src/net/http/server.go:2916
 net/http.(*conn).serve
 	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:05:10	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "4.241ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:05:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "4.241ms", "rows": 0, "error": "Error 1146: Table 'gohub.articles' doesn't exist"}
+2022-04-05 23:05:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "1.553ms", "rows": 15}
+2022-04-05 23:05:10	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "0.608ms", "rows": 11}
+2022-04-05 23:05:10	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:07:22	[31mERROR[0m	gorm@v1.23.4/callbacks.go:134	Database Error	{"sql": "SELECT count(*) FROM `articles`", "time": "1.068ms", "rows": 0, "error": "invalid connection"}
+gorm.io/gorm.(*processor).Execute
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/callbacks.go:134
+gorm.io/gorm.(*DB).Count
+	C:/Code/go/pkg/mod/gorm.io/gorm@v1.23.4/finisher_api.go:423
+gohub/pkg/paginator.(*Pagination).TotalCount
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:156
+gohub/pkg/paginator.(*Pagination).HasPages
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:167
+gohub/pkg/paginator.(*Pagination).Paging
+	C:/Code/go/src/gohub/pkg/paginator/pagination.go:90
+gohub/app/models/article.GetAll
+	C:/Code/go/src/gohub/app/models/article/crud.go:31
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:44
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:07:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "1.068ms", "rows": 0, "error": "invalid connection"}
+2022-04-05 23:07:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "5.354ms", "rows": 15}
+2022-04-05 23:07:22	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "2.118ms", "rows": 11}
+2022-04-05 23:07:22	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:07:45	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "4.706ms", "rows": 1}
+2022-04-05 23:07:45	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "0.532ms", "rows": 15}
+2022-04-05 23:07:45	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "1.149ms", "rows": 11}
+2022-04-05 23:07:45	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:09:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "0.000ms", "rows": 1}
+2022-04-05 23:09:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "0.556ms", "rows": 15}
+2022-04-05 23:09:29	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "0.514ms", "rows": 11}
+2022-04-05 23:09:29	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:09:48	[33mWARN[0m	middlewares/logger.go:70	HTTP Warning 404	{"status": 404, "request": "POST /v1/auth/verify-codes/email", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "0.000ms", "Request Body": "{\r\n    \"email\":\"497070928@qq.com\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"123123\"\r\n}", "Response Body": "{\"error_code\":404,\"error_message\":\"路由未定义，请确认 url 和请求方法是否正确。\"}"}
+2022-04-05 23:09:55	[35mDEBUG[0m	verifycode/verifycode.go:84	验证码	{"生成验证码": "{\"497070928@qq.com\":\"123456\"}"}
+2022-04-05 23:09:55	[35mDEBUG[0m	mail/driver_smtp.go:27	发送邮件	{"发件详情": "{\"ReplyTo\":null,\"From\":\"Gohub \\u003cgohub@example.com\\u003e\",\"To\":[\"497070928@qq.com\"],\"Bcc\":null,\"Cc\":null,\"Subject\":\"Email 验证码\",\"Text\":null,\"HTML\":\"PGgxPuaCqOeahCBFbWFpbCDpqozor4HnoIHmmK8gMTIzNDU2IDwvaDE+\",\"Sender\":\"\",\"Headers\":{},\"Attachments\":null,\"ReadReceipt\":null}"}
+2022-04-05 23:09:57	[31mERROR[0m	mail/driver_smtp.go:40	发送邮件	{"发件出错": "dial tcp [::1]:1025: connectex: No connection could be made because the target machine actively refused it."}
+gohub/pkg/mail.(*SMTP).Send
+	C:/Code/go/src/gohub/pkg/mail/driver_smtp.go:40
+gohub/pkg/mail.(*Mailer).Send
+	C:/Code/go/src/gohub/pkg/mail/mail.go:43
+gohub/pkg/verifycode.(*VerifyCode).SendEmail
+	C:/Code/go/src/gohub/pkg/verifycode/verifycode.go:105
+gohub/app/http/controllers/api/v1/auth.(*VerifyCodeController).SendUsingEmail
+	C:/Code/go/src/gohub/app/http/controllers/api/v1/auth/verify_code_controller.go:59
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitPerRoute.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.LimitIP.func1
+	C:/Code/go/src/gohub/app/http/middlewares/limit.go:33
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.ForceUA.func1
+	C:/Code/go/src/gohub/app/http/middlewares/force_ua.go:21
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Recovery.func1
+	C:/Code/go/src/gohub/app/http/middlewares/recovery.go:61
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+gohub/app/http/middlewares.Logger.func1
+	C:/Code/go/src/gohub/app/http/middlewares/logger.go:45
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966
+2022-04-05 23:09:57	[35mDEBUG[0m	middlewares/logger.go:75	HTTP Access Log	{"status": 200, "request": "POST /api/v1/auth/verify-codes/email", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "time": "2368.756ms", "Request Body": "{\r\n    \"email\":\"497070928@qq.com\",\r\n    \"captcha_id\": \"captcha_skip_test\",\r\n    \"captcha_answer\": \"123123\"\r\n}", "Response Body": "{\"message\":\"操作成功！\",\"success\":true}"}
+2022-04-05 23:41:14	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 23:48:49	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 23:50:36	[31mERROR[0m	cmd/serve.go:38	CMD	{"serve": "listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}
+gohub/app/cmd.runWeb
+	C:/Code/go/src/gohub/app/cmd/serve.go:38
+github.com/spf13/cobra.(*Command).execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:860
+github.com/spf13/cobra.(*Command).ExecuteC
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	C:/Code/go/pkg/mod/github.com/spf13/cobra@v1.4.0/command.go:902
+main.main
+	C:/Code/go/src/gohub/main.go:82
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-04-05 23:53:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT count(*) FROM `articles`", "time": "5.316ms", "rows": 1}
+2022-04-05 23:53:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `users`", "time": "1.524ms", "rows": 15}
+2022-04-05 23:53:27	[35mDEBUG[0m	gorm@v1.23.4/callbacks.go:134	Database Query	{"sql": "SELECT * FROM `categories`", "time": "0.517ms", "rows": 11}
+2022-04-05 23:53:27	[31mERROR[0m	view/view.go:53	Error Occurred:	{"error": "template: sidebar.gohtml:12:33: executing \"sidebar\" at <$category.Link>: can't evaluate field Link in type category.Category"}
+gohub/pkg/view.RenderTemplate
+	C:/Code/go/src/gohub/pkg/view/view.go:53
+gohub/pkg/view.Render
+	C:/Code/go/src/gohub/pkg/view/view.go:24
+gohub/app/http/controllers/web.(*ArticlesController).Index
+	C:/Code/go/src/gohub/app/http/controllers/web/articles_controller.go:51
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+gohub/app/http/middlewares.StartSession.func1
+	C:/Code/go/src/gohub/app/http/middlewares/start_session.go:16
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+github.com/gorilla/mux.(*Router).ServeHTTP
+	C:/Code/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210
+gohub/app/http/middlewares.RemoveTrailingSlash.func1
+	C:/Code/go/src/gohub/app/http/middlewares/remove_trailing_slash.go:17
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2084
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1966

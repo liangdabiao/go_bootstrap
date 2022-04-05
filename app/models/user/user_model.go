@@ -5,6 +5,7 @@ import (
 	"gohub/app/models"
 	"gohub/pkg/database"
 	"gohub/pkg/hash"
+	"gohub/pkg/route"
 )
 
 // User 用户模型
@@ -40,4 +41,9 @@ func (userModel *User) ComparePassword(_password string) bool {
 func (userModel *User) Save() (rowsAffected int64) {
 	result := database.DB.Save(&userModel)
 	return result.RowsAffected
+}
+
+// Link 方法用来生成用户链接
+func (user User) Link() string {
+	return route.Name2URL("users.show", "id", user.GetStringID())
 }
